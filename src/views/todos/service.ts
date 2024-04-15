@@ -1,18 +1,14 @@
-interface Todo {
+export interface Todo {
     userId: number;
     id: number;
     title: string;
     completed: boolean;
 }
 
-export const fetchTodos = async (): Promise<Todo[] | Error> => {
-    try {
-        const response = await fetch("https://jsonplaceholder.typicode.com/todos");
-        if (!response.ok) {
-            throw new Error("Failed to fetch todos");
-        }
-        return await response.json() as Todo[];
-    } catch (error) {
-        return error as Error;
+export const fetchTodos = async (): Promise<Todo[]> => {
+    const response = await fetch("https://jsonplaceholder.typicode.com/todos");
+    if (!response.ok) {
+        throw new Error("Failed to fetch todos");
     }
+    return await response.json() as Todo[];
 };

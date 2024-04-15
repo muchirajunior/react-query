@@ -1,6 +1,6 @@
 export const Footer = () => {
     return (
-        <footer className="py-3 my-4 fixed-bottom container">
+        <footer className="py-3 my-4 fixed-bottom container bg-light">
             <ul className="nav justify-content-center border-bottom pb-3 mb-3">
                 {/* <li className="nav-item"><a href="#" className="nav-link px-2 ">Home</a></li>
                 <li className="nav-item"><a href="#" className="nav-link px-2 ">Features</a></li>

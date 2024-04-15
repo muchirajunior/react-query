@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
     return (
-        <nav className="navbar navbar-expand-lg shadow mb-2">
+        <nav className="navbar navbar-expand-lg shadow mb-2 fixed-top bg-body-tertiary">
             <div className="container">
                 <Link className="navbar-brand" to="#">ReactQuery</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
