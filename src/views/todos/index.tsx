@@ -15,9 +15,9 @@ export const Todos: React.FC = () => {
     return (
         <>
             <h2 className='text-center mb-3'>Typicode Todos</h2>
-            <div className='container d-flex flex-row flex-wrap'>
+            <div className='container d-flex flex-row flex-wrap '>
                 {
-                    data?.map((todo: Todo) => <div className='shadow-sm m-2 p-2 d-flex flex-row align-items-center' style={{ width: 400 }}>
+                    data?.map((todo: Todo) => <div className={`shadow-sm m-2 p-2 d-flex flex-row align-items-center rounded-3 ${todo.completed ? "bg-info-subtle":"bg-light"} `} style={{ width:400 }}>
                         <span className='m-2 p-2 rounded-circle fw-bold fs-5 bg-primary-subtle text-center' style={{ width: 50 }}>{todo.id}</span>
                         <span className='flex-fill'>{todo.title}</span>
                     </div>)
