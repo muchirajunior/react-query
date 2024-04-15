@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query"
+import { ErrorComponent } from "../../components/error"
 
 export const TanstackExample: React.FC = () => {
   const { isPending, error, data } = useQuery({
@@ -8,7 +9,7 @@ export const TanstackExample: React.FC = () => {
 
   if (isPending) return <div className="container p-5"> <div className="spinner-border mx-auto" role="status" /> </div>
 
-  if (error) return <div className="container p-4 mt-5 shadow rounded-4"> 'An error has occurred: ' + error.message </div>
+  if (error) return <ErrorComponent message={ 'An error has occurred: ' + error.message }/>
 
   return (
     <div className="container p-4 mt-5 shadow rounded-4">

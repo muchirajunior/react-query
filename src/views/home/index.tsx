@@ -17,7 +17,7 @@ export const Home : React.FC = ()=> {
             <div className='m-3 mt-5 d-flex justify-content-between'>
               <Link to="/" className='btn btn-outline-primary w-25'>Home</Link>
               <Link to="/example" className='btn btn-outline-success w-25'>Tanstack Example</Link>
-              <Link to="/todos" className='btn btn-outline-info w-25'>Typecode API Todos</Link>
+              <Link to="/todos" className='btn btn-outline-info w-25'>Typicode API Todos</Link>
             </div>
         </div>
     </div>
