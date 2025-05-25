@@ -9,9 +9,9 @@ export const Todos: React.FC = () => {
         queryKey: ["getTodos"],
         queryFn: fetchTodos
     })
-    if (isLoading) return <Loader message='Loading todos' />;
+    if (isLoading) return <Loader message='Loading todos' />
 
-    if (error) return <ErrorComponent message={error.message} />;
+    if (error) return <ErrorComponent message={error.message} />
     return (
         <>
             <h2 className='text-center mb-3'>Typicode Todos</h2>
