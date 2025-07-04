@@ -5,7 +5,7 @@ export const Home : React.FC = ()=> {
   return (
     <div className='container'>
         <div className='rounded-3 shadow mt-5 p-2'>
-            <h2 className='m-3'>Hello There</h2>
+            <h2 className='m-3'>Hello There Demo user</h2>
             <p className='m-3'>
               This React app is built for interacting with
                <a href="https://tanstack.com/query/latest/docs/framework/react/overview" target='_blank' className='btn btn-outline-primary btn-sm mx-3'>Tanstack React Query </a> 
